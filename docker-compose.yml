@@ -1,0 +1,75 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: alpha_radar_db
+    environment:
+      POSTGRES_DB: alpha_radar
+      POSTGRES_USER: alphauser
+      POSTGRES_PASSWORD: alphapass123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U alphauser"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # API Server
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: alpha_radar_api
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://alphauser:alphapass123@postgres:5432/alpha_radar
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      NODE_ENV: production
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # Scheduler (Crawlers + AI Processing)
+  scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile.scheduler
+    container_name: alpha_radar_scheduler
+    environment:
+      DATABASE_URL: postgresql://alphauser:alphapass123@postgres:5432/alpha_radar
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+      TELEGRAM_CHAT_ID: ${TELEGRAM_CHAT_ID}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # Frontend (optional, can deploy to Vercel instead)
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: alpha_radar_frontend
+    ports:
+      - "3000:3000"
+    environment:
+      NEXT_PUBLIC_API_URL: http://api:8000
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  default:
+    name: alpha_radar_network
+

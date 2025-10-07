@@ -1,0 +1,23 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Install Python and dependencies
+RUN apk add --no-cache python3 py3-pip
+
+# Copy package files
+COPY package*.json ./
+COPY requirements.txt ./
+
+# Install Node.js dependencies
+RUN npm ci --only=production
+
+# Install Python dependencies
+RUN pip3 install -r requirements.txt
+
+# Copy all backend files
+COPY backend/ ./backend/
+
+# Start scheduler
+CMD ["node", "backend/scheduler/cron_jobs.js"]
+
