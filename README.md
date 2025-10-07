@@ -1,4 +1,4 @@
-# 🛰️ Alpha Radar
+# 🛰️ Alpha Radar - Crypto Intelligence Aggregator
 
 <div align="center">
 
@@ -8,6 +8,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-14+-black.svg)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5+-blue.svg)](https://www.typescriptlang.org/)
 
 *"信息自由的起点，是洞察之物的公平。"*
 
