@@ -27,15 +27,15 @@ export default function Header() {
             <div className="flex gap-2">
               <button 
                 className="px-4 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors text-sm font-medium"
-                onClick={() => window.open('https://t.me/alpharadar', '_blank')}
+                onClick={() => window.open('https://twitter.com/ninglin000', '_blank')}
               >
-                📱 Telegram Bot
+                🐦 Follow on X
               </button>
               <button 
                 className="px-4 py-2 border border-gray-700 hover:border-purple-500 rounded-lg transition-colors text-sm font-medium"
-                onClick={() => window.open('/api/rss', '_blank')}
+                onClick={() => window.open('https://github.com/ninglinLiu/awsome-alpha-radar-crypto-intelligence', '_blank')}
               >
-                📡 RSS Feed
+                ⭐ Star on GitHub
               </button>
             </div>
           </div>

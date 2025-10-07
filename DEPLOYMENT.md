@@ -563,11 +563,11 @@ app.use('/api/', limiter);
 
 遇到问题？联系我们：
 
-- 📧 Email: support@alpharadar.io
-- 💬 Discord: [Alpha Radar Community](#)
-- 📖 Documentation: [docs.alpharadar.io](#)
+- 🐦 X (Twitter): [@ninglin000](https://twitter.com/ninglin000)
+- 📖 Documentation: [查看 README.md](README.md)
 
 ---
 
 **祝部署顺利！🚀**
+
 

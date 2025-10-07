@@ -106,14 +106,11 @@ export default function Home() {
             "信息自由的起点，是洞察之物的公平。"
           </p>
           <div className="mt-4 flex justify-center gap-4">
-            <a href="https://github.com" className="hover:text-purple-400 transition-colors">
-              GitHub
+            <a href="https://github.com/ninglinLiu/awsome-alpha-radar-crypto-intelligence" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">
+              ⭐ GitHub
             </a>
-            <a href="https://t.me" className="hover:text-purple-400 transition-colors">
-              Telegram
-            </a>
-            <a href="/api/rss" className="hover:text-purple-400 transition-colors">
-              RSS Feed
+            <a href="https://twitter.com/ninglin000" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">
+              🐦 X (Twitter)
             </a>
           </div>
         </div>

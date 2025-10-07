@@ -8,8 +8,8 @@
 
 ```bash
 # 1. 克隆项目
-git clone https://github.com/yourusername/alpha-radar.git
-cd alpha-radar
+git clone https://github.com/ninglinLiu/awsome-alpha-radar-crypto-intelligence.git
+cd awsome-alpha-radar-crypto-intelligence
 
 # 2. 配置环境
 cp .env.example .env

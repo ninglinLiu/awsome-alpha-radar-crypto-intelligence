@@ -11,9 +11,13 @@
 [![Next.js](https://img.shields.io/badge/Next.js-14+-black.svg)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5+-blue.svg)](https://www.typescriptlang.org/)
 
+[![GitHub last commit](https://img.shields.io/github/last-commit/ninglinLiu/awsome-alpha-radar-crypto-intelligence)](https://github.com/ninglinLiu/awsome-alpha-radar-crypto-intelligence)
+[![GitHub stars](https://img.shields.io/github/stars/ninglinLiu/awsome-alpha-radar-crypto-intelligence)](https://github.com/ninglinLiu/awsome-alpha-radar-crypto-intelligence)
+[![GitHub forks](https://img.shields.io/github/forks/ninglinLiu/awsome-alpha-radar-crypto-intelligence)](https://github.com/ninglinLiu/awsome-alpha-radar-crypto-intelligence)
+
 *"信息自由的起点，是洞察之物的公平。"*
 
-[🌐 Live Demo](#) | [📖 Documentation](#) | [🐛 Report Bug](#) | [✨ Request Feature](#)
+[🌐 Live Demo](#) | [📖 Documentation](#) | [🐛 Report Bug](https://github.com/ninglinLiu/awsome-alpha-radar-crypto-intelligence/issues) | [✨ Request Feature](https://github.com/ninglinLiu/awsome-alpha-radar-crypto-intelligence/issues)
 
 </div>
 
@@ -472,10 +476,7 @@ pm2 startup
 
 ## 📧 联系我们
 
-- 🐦 Twitter: [@alpharadar](https://twitter.com/alpharadar)
-- 💬 Telegram: [@alpharadar_community](https://t.me/alpharadar_community)
-- 📧 Email: hello@alpharadar.io
-- 🌐 Website: https://alpharadar.io
+- 🐦 X (Twitter): [@ninglin000](https://twitter.com/ninglin000)
 
 ---
 

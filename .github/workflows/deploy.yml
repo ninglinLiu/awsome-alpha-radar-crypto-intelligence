@@ -89,3 +89,4 @@ jobs:
       with:
         railway-token: ${{ secrets.RAILWAY_TOKEN }}
         service: alpha-radar-api
+

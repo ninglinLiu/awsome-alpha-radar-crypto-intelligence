@@ -125,3 +125,4 @@ export default function FilterBar({ filters, onFilterChange, onRefresh }: Filter
   )
 }
 
+
